@@ -3,7 +3,6 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <h1 style={{fontSize:40}}>this is made by private folder</h1>
         <h1 style={{fontSize:40}}>This is contact us page</h1>
     </div>
   )

@@ -1,7 +1,9 @@
 "use client";
 
+
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Navbar from "./Navbar/page";
 // import { Metadata } from "next"
 // export const metadata:Metadata = {
 //   title:{
@@ -15,6 +17,7 @@ export default function layout({children}:{children:React.ReactNode}){
         x:0,
         y:0,
     });
+  
 return(
     
     <html>
@@ -49,10 +52,10 @@ return(
          
         
         </div>
-
+        <Navbar/>
         {children}
         <footer style={{padding:"5px",backgroundColor:"black",bottom:"0px",position:"fixed",width:"100%",textAlign:"center"}}>
-           <h3 style={{color:"white"}}>2025 &copy; made by Fatima Rezaie</h3>
+           <h3 style={{color:"white"}}>&copy; 2025 made by Fatima Rezaie</h3>
         </footer>
       </body>
     </html>
