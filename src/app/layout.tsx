@@ -52,11 +52,10 @@ return(
          
         
         </div>
+        <div style={{}}></div>
         <Navbar/>
         {children}
-        <footer style={{padding:"5px",backgroundColor:"black",bottom:"0px",position:"fixed",width:"100%",textAlign:"center"}}>
-           <h3 style={{color:"white"}}>&copy; 2025 made by Fatima Rezaie</h3>
-        </footer>
+     
       </body>
     </html>
   )

@@ -13,14 +13,19 @@ import { usePathname } from 'next/navigation';
             href:"/about",
         },
         {
-            id:4,
+            id:3,
             name:"services",
             href:"/services",
         },
         {
-            id:3,
+            id:4,
             name:"Contact",
             href:"/contact",
+        },
+        {
+            id:5,
+            name:"product",
+            href:"/product",
         },
     ]
 function Navbar() {
@@ -34,7 +39,7 @@ function Navbar() {
             {nav.name}
            </Link>)
             })}
-            <button style={{border:"1px solid white",color:"black",marginLeft:"68%",padding:"8px 12px",textDecoration:"none",fontSize:"18px",boxShadow:"12px black",borderRadius:"4px"}}><Link href="login">Login</Link></button>
+            <button style={{border:"1px solid white",color:"black",marginLeft:"60%",padding:"8px 12px",textDecoration:"none",fontSize:"18px",boxShadow:"12px black",borderRadius:"4px"}}><Link href="login">Login</Link></button>
         </nav>
     </div>
   )

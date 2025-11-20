@@ -10,13 +10,13 @@ const list:{id:number,name:string,price:number}[]=[
 ]
 function page() {
   return (
-    <div style={{display:"grid",gridRow:"3",width:"100%"}}>
+    <div style={{display:"flex",gap:"30px",width:"100%",flexWrap:"wrap"}}>
         {list.map(product=>(
-           <div style={{height:"100%",width:"30%",textAlign:"center",backgroundColor:"black",padding:"4px",borderRadius:"30px",color:"white"}}>
+           <div key={product.id} style={{height:"50vh",marginTop:"30px",width:"30%",textAlign:"center",backgroundColor:"black",padding:"4px",borderRadius:"10px",color:"white",}}>
             <h1 style={{}}>{product.id}</h1>
             <h1 style={{fontSize:"50px"}}>{product.name}</h1>
             <h1 style={{}}>{product.price}</h1>
-            <Link style={{padding:"9px 16px",backgroundColor:"blue",color:"white",borderRadius:"10px"}} href={`products/order/${product.id}`}>Order</Link>
+            <Link style={{padding:"12px 24px",backgroundColor:"blue",textDecoration:"none",color:"white",borderRadius:"10px"}} href={`product/order/${product.name}`}>Order</Link>
            </div>
         ))}
     </div>
