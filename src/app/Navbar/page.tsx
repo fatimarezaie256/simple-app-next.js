@@ -32,7 +32,7 @@ function Navbar() {
      const pathName = usePathname();
   return (
     <div>
-              <nav style={{display:"flex",gap:"30px",padding:"14px 7px",backgroundColor:"blue",}}>
+              <nav style={{display:"flex",gap:"30px",padding:"14px 7px",backgroundColor:"gray",}}>
             {navList.map((nav)=>{
                 
            return(<Link key={nav.id} href={nav.href} style={{color:"white",textDecoration:"none",fontSize:"20px"}}>

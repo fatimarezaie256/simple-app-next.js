@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-        <h1 style={{textAlign:"center",fontSize:"25px"}}>This is registered page</h1>
+        <h1>this is the forgot password page</h1>
     </div>
   )
 }
