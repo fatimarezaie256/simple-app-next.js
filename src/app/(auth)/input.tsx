@@ -5,7 +5,7 @@ function input() {
     const [value,setValue] =useState("");
   return (
     <div>
-        <input type="text" style={{padding:"20px 30px",border:"1px solid black",fontSize:"20px"}}/>
+        <input type="text" style={{padding:"50px 30px",border:"1px solid black",fontSize:"50px"}}/>
     </div>
   )
 }

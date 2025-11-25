@@ -1,6 +1,7 @@
-import Navbar from "../Navbar/page";
+
+import Navbar from "@/app/Navbar/page"
 import { Metadata } from "next"
-import input from "./input";
+
 export const metadata:Metadata = {
   title:{
     default:"Next.js",
@@ -15,9 +16,9 @@ return(
     <html>
       <body>
         
-        <div style={{}}></div>
-        <Navbar/>
-        <input/>
+        
+      <Navbar/>
+       
         {children}
      
       </body>
